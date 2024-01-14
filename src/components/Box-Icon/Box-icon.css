@@ -1,0 +1,55 @@
+:root {
+  --hoverBtnClose: #d3d5b384;
+}
+.show {
+  transform: scale(0);
+  border: none;
+  cursor: pointer;
+}
+.show:hover {
+  background: var(--hoverBtnClose);
+}
+
+@media (width< 850px) {
+  .show {
+    transform: scale(1);
+    background: rgb(222, 242, 242, 0.89);
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 0.4rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    height: 45px;
+    width: 45px;
+    z-index: 3;
+  }
+}
+
+.addPoyghn {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, #ae1fbbaa, rgb(15, 19, 207));
+  transition: 1s all ease-in-out;
+  z-index: 1;
+  animation: loadEllipse 1s ease-in-out;
+}
+@keyframes loadEllipse {
+  from {
+    clip-path: ellipse(0rem 0rem at 50% 50%);
+  }
+  to {
+    clip-path: ellipse(50rem 50rem at 50% 50%);
+  }
+}
