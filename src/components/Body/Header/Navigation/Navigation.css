@@ -58,18 +58,5 @@
       align-items: center;
       position: relative;
     }
-    #navigation_element ul::before {
-      content: "";
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      /*  min-height: 20vh;
-      min-width: none; */
-      background: #fff;
-      border-radius: 50%;
-      border: 5px groove #6cc22ea2;
-      background: transparent;
-      display: none;
-    }
   }
 }

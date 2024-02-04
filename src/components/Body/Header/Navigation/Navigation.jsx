@@ -1,25 +1,22 @@
-import { useState } from "react";
 import React from "react";
-import "../Navigation/Navigation.css";
-
+import "./Navigation.css";
+import { Link } from "react-router-dom";
 export default function Navigation() {
-  const [value, setValue] = useState("");
-
   return (
     <React.Fragment>
       <nav id="navigation_element">
-        <ul className="navigation navigator">
+        <ul className="navigation navigator" id="navigation">
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <Link to="/contactUs">Contact Us</Link>
           </li>
           <li>
-            <a href="#">Ubication</a>
+            <Link to="/ubication">Ubication</Link>
           </li>
         </ul>
       </nav>

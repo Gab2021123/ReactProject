@@ -1,0 +1,38 @@
+.error_Boundary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.error_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  animation: backgroundLanding 10s infinite;
+  transition: animation 1s;
+  border-radius: 30px;
+}
+@keyframes backgroundLanding {
+  from {
+    background: linear-gradient(0, #96a192a4, #b6bdaa8c, #ccdc72);
+  }
+  to {
+    background: linear-gradient(125deg, #af6acf8c, #c0ae7aae, #297b969b);
+  }
+}
+.loader_info {
+  width: 10px;
+  transform-origin: 0;
+  animation: loader 1s 0.2s ease-in-out infinite;
+  background: #1e4f5a;
+}
+@keyframes loader {
+  from {
+    transform: translateX(-90deg) rotateX(0);
+  }
+  to {
+    transform: translateX(270deg) rotateX(360deg);
+  }
+}
